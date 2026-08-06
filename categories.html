@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | GlowBeauty</title>
+
+    <link rel="stylesheet" href="css/categories.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ================= Header ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                Glow<span>Beauty</span>
+            </div>
+
+             <!-- Hamburger Icon -->
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+            <nav id="navbar">
+
+                <ul>
+
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li><a href="categories.html">Categories</a></li>
+
+
+                    <li><a href="offers.html">Offers</a></li>
+
+                    <li><a href="login.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-icons">
+
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="register.html">
+                    <i class="fa-regular fa-user"></i>
+                    login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+<section class="hero">
+
+    <h1>Beauty Categories</h1>
+
+    <p>
+        Explore our luxurious collection and discover beauty made just for you.
+    </p>
+
+</section>
+
+
+<section class="categories">
+
+    <div class="category-card">
+
+        <img src="images/makeup.png" alt="">
+
+        <div class="overlay">
+
+            <h2>Makeup</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <img src="images/skincare.jpg" alt="">
+
+        <div class="overlay">
+
+            <h2>Skincare</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <img src="images/perfume.jpg" alt="">
+
+        <div class="overlay">
+
+            <h2>Perfumes</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <img src="images/hair.jpg" alt="">
+
+        <div class="overlay">
+
+            <h2>Hair Care</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <img src="images/lips.jpg" alt="">
+
+        <div class="overlay">
+
+            <h2>Lip Care</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <img src="images/tools.jpg" alt="">
+
+        <div class="overlay">
+
+            <h2>Beauty Tools</h2>
+
+            <a href="cart.html">Shop Now</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector("#navbar");
+
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("show");
+});
+
+</script>
+
+</body>
+</html>

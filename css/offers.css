@@ -1,0 +1,762 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+background:#ffffff;
+color:#222;
+
+}
+
+
+
+
+/* Header */
+
+header{
+
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 7%;
+
+background:white;
+
+box-shadow:0 3px 15px rgba(0,0,0,.05);
+
+}
+
+
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#222;
+
+}
+
+
+.logo span{
+
+color:#E91E63;
+
+}
+
+
+
+nav{
+
+display:flex;
+gap:35px;
+
+}
+
+
+nav a{
+
+text-decoration:none;
+color:#333;
+font-size:16px;
+
+}
+
+
+nav a.active{
+
+color:#E91E63;
+
+}
+
+
+
+.icons{
+
+display:flex;
+gap:15px;
+
+}
+
+
+.icons div{
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:#f5f5f5;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:relative;
+
+}
+
+
+.icons i{
+
+font-size:18px;
+
+}
+
+
+
+.cart span{
+
+position:absolute;
+
+top:-5px;
+right:-5px;
+
+background:#E91E63;
+
+color:white;
+
+font-size:12px;
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+
+
+
+/* Hero */
+
+
+.hero{
+
+height:380px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.25)
+),
+url("../images/Private\ Label\ Makeup\ Manufacturer\ -\ YBS\ Cosmetics.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+
+
+.hero-content{
+
+color:white;
+
+}
+
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+
+.hero p{
+
+font-size:20px;
+
+margin:20px 0;
+
+}
+
+
+.hero button{
+
+background:#E91E63;
+
+border:none;
+
+padding:14px 35px;
+
+color:white;
+
+border-radius:30px;
+
+font-size:16px;
+
+}
+
+
+
+
+
+/* Main */
+
+.offers-container{
+
+display:flex;
+
+gap:40px;
+
+padding:60px 7%;
+
+}
+
+
+
+
+
+/* Sidebar */
+
+
+.filter{
+
+width:250px;
+
+background:#fafafa;
+
+padding:25px;
+
+border-radius:20px;
+
+height:max-content;
+
+}
+
+
+
+.filter h2{
+
+margin-bottom:25px;
+
+}
+
+
+
+.filter-box{
+
+margin-bottom:30px;
+
+}
+
+
+.filter-box h3{
+
+margin-bottom:15px;
+
+}
+
+
+.filter label{
+
+display:block;
+
+margin:12px 0;
+
+}
+
+
+
+
+
+/* Products */
+
+
+.products{
+
+flex:1;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+
+.h-card{
+
+background:white;
+
+border-radius:20px;
+
+padding:20px;
+
+text-align:center;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+position:relative;
+
+}
+
+
+
+.h-card img{
+
+width:100%;
+height:230px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+
+
+.discount{
+
+position:absolute;
+
+top:20px;
+left:20px;
+
+background:#E91E63;
+
+color:white;
+
+padding:7px 15px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+
+
+.h-card h3{
+
+margin:15px 0;
+
+}
+
+
+
+.stars{
+
+color:#D4AF37;
+
+}
+
+
+
+.price{
+
+font-size:22px;
+
+font-weight:bold;
+
+margin:15px;
+
+}
+
+
+.price span{
+
+color:#999;
+
+text-decoration:line-through;
+
+font-size:15px;
+
+margin-right:10px;
+
+}
+
+
+
+.h-card button{
+
+background:#E91E63;
+
+border:none;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:25px;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+.offers-container{
+
+flex-direction:column;
+
+}
+
+
+.filter{
+
+width:100%;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: start;
+}
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor:pointer;
+    overflow:hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    transition: .6s cubic-bezier(.28, -0.03,0,.99); 
+
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+.card > .row{
+    color: aliceblue;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card > .row > .icon {
+    background: #ddd;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .descripion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.descripion p {
+    color: aliceblue;
+    padding-top:5px;
+}
+.descripion h4 {
+    text-transform: uppercase;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+}
+input:checked + label .descripion {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.card[for="c1"] {
+    background-image:url(../images/maye\ Rum.jpg);
+}
+.card[for="c2"] {
+    background-image:url(../images/serum.png);
+}
+.card[for="c3"] {
+    background-image:url(../images/Lipstick\ wallpaper.jpg);
+}
+.card[for="c4"] {
+    background-image:url(../images/makeup.png);
+}
+     
+
+
+/* ===========================
+   Mobile Menu
+=========================== */
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+    color:#222;
+}
+
+
+/* Tablet */
+
+@media(max-width:992px){
+
+header{
+
+    padding:15px 20px;
+    position:relative;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+}
+
+nav{
+
+    position:absolute;
+
+    top:80px;
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    display:none;
+    flex-direction:column;
+
+    text-align:center;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    padding:20px 0;
+
+    z-index:1000;
+
+}
+
+nav.show{
+
+    display:flex;
+
+}
+
+nav a{
+
+    padding:15px 0;
+
+}
+
+.icons{
+
+    gap:10px;
+
+}
+
+.icons div{
+
+    width:36px;
+    height:36px;
+
+}
+
+.offers-container{
+
+    flex-direction:column;
+
+    padding:40px 20px;
+
+}
+
+.filter{
+
+    width:100%;
+
+}
+
+.products{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.wrapper{
+
+    height:auto;
+    padding:50px 20px;
+
+}
+
+.container{
+
+    width:100%;
+    overflow-x:auto;
+
+}
+
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+.products{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero{
+
+    height:300px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero button{
+
+    padding:12px 25px;
+
+}
+
+.icons{
+
+    display:none;
+
+}
+
+.container{
+
+    height:300px;
+
+}
+
+input:checked + label{
+
+    width:300px;
+
+}
+
+.card{
+
+    height:280px;
+
+}
+
+}
